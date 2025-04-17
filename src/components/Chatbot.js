@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import ReactMarkdown from 'react-markdown';
 import './Chatbot.css';
+import { RxAvatar } from "react-icons/rx";
 
 
 const API_KEY = "AIzaSyBv-B1bYeKkO3MZ3Kqpgwv0ximNUXG97Ws";
@@ -80,14 +81,14 @@ const Chatbot = () => {
   return (
     <div className="chat-container">
       <div className="chat-header">
-        <div className="avatar">AI</div>
+      <img src='/imagens/logo.png' className="avatar"/>
         <h1>Mega Chef da Computaria</h1>
       </div>
       
       <div className="messages-container">
         {messages.length === 0 && (
           <div className="message bot">
-            <div className="avatar">AI</div>
+            <img src='/imagens/logo.png' className="avatar"/>
             <div className="message-content">
               <ReactMarkdown>
               Olá! Sou o Mega Chef da Computaria, seu assistente culinário virtual, pronto para te ajudar com:
@@ -113,7 +114,7 @@ Para começar, me conte se tem alguma restrição alimentar ou preferência, e o
         {messages.map((message, index) => (
           <div key={index} className={`message ${message.isUser ? 'user' : 'bot'}`}>
             <div className="avatar">
-              {message.isUser ? 'U' : 'AI'}
+            {message.isUser ? <RxAvatar size={60}/> : <img className="avatar" src='/imagens/logo.png'/>}
             </div>
             <div className="message-content">
               <ReactMarkdown>
@@ -124,7 +125,7 @@ Para começar, me conte se tem alguma restrição alimentar ou preferência, e o
         ))}
         {isLoading && (
           <div className="typing-indicator">
-            <div className="avatar">AI</div>
+            <img src='/imagens/logo.png' className="avatar"/>
             <div className="message-content">
               <span></span>
               <span></span>
