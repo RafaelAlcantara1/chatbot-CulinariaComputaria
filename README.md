@@ -2,7 +2,7 @@
 
 Bem-vindo ao repositório oficial do **Mega Chef da Computaria** — um assistente culinário virtual desenvolvido para tornar a experiência na cozinha mais divertida, personalizada e tecnológica!
 
-<img src="CAMINHO_DA_IMAGEM_DO_MASCOTE" alt="Mascote Mega Chef da Computaria" width="200" />
+<img src="https://ibb.co/rG2YGLGc" alt="Mascote Mega Chef da Computaria" width="200" />
 
 ---
 
