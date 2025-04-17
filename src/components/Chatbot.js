@@ -81,14 +81,14 @@ const Chatbot = () => {
   return (
     <div className="chat-container">
       <div className="chat-header">
-      <img src='/imagens/logo.png' className="avatar"/>
+      <img alt="logo" src='/imagens/logo.png' className="avatar"/>
         <h1>Mega Chef da Computaria</h1>
       </div>
       
       <div className="messages-container">
         {messages.length === 0 && (
           <div className="message bot">
-            <img src='/imagens/logo.png' className="avatar"/>
+            <img alt="logo" src='/imagens/logo.png' className="avatar"/>
             <div className="message-content">
               <ReactMarkdown>
               Olá! Sou o Mega Chef da Computaria, seu assistente culinário virtual, pronto para te ajudar com:
@@ -114,7 +114,7 @@ Para começar, me conte se tem alguma restrição alimentar ou preferência, e o
         {messages.map((message, index) => (
           <div key={index} className={`message ${message.isUser ? 'user' : 'bot'}`}>
             <div className="avatar">
-            {message.isUser ? <RxAvatar size={60}/> : <img className="avatar" src='/imagens/logo.png'/>}
+            {message.isUser ? <RxAvatar size={60}/> : <img alt="logo" className="avatar" src='/imagens/logo.png'/>}
             </div>
             <div className="message-content">
               <ReactMarkdown>
@@ -125,7 +125,7 @@ Para começar, me conte se tem alguma restrição alimentar ou preferência, e o
         ))}
         {isLoading && (
           <div className="typing-indicator">
-            <img src='/imagens/logo.png' className="avatar"/>
+            <img alt="logo" src='/imagens/logo.png' className="avatar"/>
             <div className="message-content">
               <span></span>
               <span></span>
