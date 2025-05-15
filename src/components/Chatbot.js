@@ -223,8 +223,7 @@ const Chatbot = () => {
   // Função para verificar se a mensagem é sobre clima
   const isWeatherQuery = (message) => {
     const weatherKeywords = ['clima', 'tempo', 'temperatura', 'previsão', 'chuva', 'sol'];
-    const lowerMessage = message.toLowerCase();
-    return weatherKeywords.some(keyword => lowerMessage.includes(keyword));
+    return weatherKeywords.some(keyword => message.toLowerCase().includes(keyword));
   };
 
   // Função para verificar se a mensagem é apenas um nome de cidade

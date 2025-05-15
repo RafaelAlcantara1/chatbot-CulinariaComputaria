@@ -1,0 +1,8 @@
+[build]
+  command = "CI=false npm run build"
+  publish = "build"
+
+[build.environment]
+  REACT_APP_GEMINI_API_KEY = "AIzaSyBv-B1bYeKkO3MZ3Kqpgwv0ximNUXG97Ws"
+  REACT_APP_WEATHER_API_KEY = "236c471e864a13bfe824100061a58d23"
+  CI = "false" 
