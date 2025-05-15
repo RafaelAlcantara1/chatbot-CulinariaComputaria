@@ -44,7 +44,6 @@ const Chatbot = () => {
   const [genAI, setGenAI] = useState(null);
   const [weatherCity, setWeatherCity] = useState(null);
   const [userCity, setUserCity] = useState(null);
-  const [isTyping, setIsTyping] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
   
   // Referências para auto-rolagem e input
@@ -218,8 +217,7 @@ const Chatbot = () => {
       'qual horário', 'qual data', 'que dia é hoje', 'que horas são',
       'data atual', 'horário atual'
     ];
-    const lowerMessage = message.toLowerCase();
-    return dateTimeKeywords.some(keyword => lowerMessage.includes(keyword));
+    return dateTimeKeywords.some(keyword => message.toLowerCase().includes(keyword));
   };
 
   // Função para verificar se a mensagem é sobre clima
