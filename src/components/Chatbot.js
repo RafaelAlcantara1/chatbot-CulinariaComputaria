@@ -6,7 +6,7 @@ import { RxAvatar } from "react-icons/rx";
 import { FiSend, FiAlertCircle } from "react-icons/fi";
 
 // Usando variável de ambiente para API key
-const API_KEY = process.env.REACT_APP_GEMINI_API_KEY || "AIzaSyBv-B1bYeKkO3MZ3Kqpgwv0ximNUXG97Ws";
+const API_KEY = process.env.REACT_APP_GEMINI_API_KEY || "AIzaSyDzHcVwZY6qM_QoAgYlNcq1Ng3bjLlknzA";
 const WEATHER_API_KEY = process.env.REACT_APP_WEATHER_API_KEY || "236c471e864a13bfe824100061a58d23";
 
 // Constantes para configuração
