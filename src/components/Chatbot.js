@@ -10,7 +10,7 @@ const API_KEY = "AIzaSyC3Zzlv5are_c7qayolflfgbRI7WXISadc";
 const WEATHER_API_KEY = process.env.REACT_APP_WEATHER_API_KEY || "236c471e864a13bfe824100061a58d23";
 
 // Constantes para configuração
-const MODELO_IA = "gemini-2.0-flash";
+const MODELO_IA = "gemini-2.5-flash";
 const MAX_HISTORICO = 10; // Manter histórico maior para melhor contexto
 const MENSAGEM_ERRO_API = "Desculpe, ocorreu um erro ao processar sua mensagem. Tente novamente mais tarde.";
 const MENSAGEM_ERRO_REDE = "Parece que você está offline. Verifique sua conexão e tente novamente.";
